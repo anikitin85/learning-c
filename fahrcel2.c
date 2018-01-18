@@ -18,4 +18,17 @@ int main()
         printf("%3.0f %6.1f\n", fahr, celsius);
         fahr = fahr + step;
     }
+
+    /*  Formatting options
+        %d      decimal int
+        %6d     decimal int, at least 6 digits wide
+        %f      fp
+        %6f     fp, at least 6 digits wide
+        %.2f    fp, 2 digits after decimal point
+        %6.2f   fp, at least 6 wide and 2 after dec. point
+        %o      octal
+        %x      hexadecimal
+        %c      character
+        %s      character string
+        %%      % */
 }
