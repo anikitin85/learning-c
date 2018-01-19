@@ -23,6 +23,7 @@ int main()
 
     /*  Formatting options
         %d      decimal int
+        %ld     long decimal int (usually 32 bit)
         %6d     decimal int, at least 6 digits wide
         %f      fp
         %6f     fp, at least 6 digits wide
