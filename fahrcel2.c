@@ -25,8 +25,9 @@ int main()
         %d      decimal int
         %ld     long decimal int (usually 32 bit)
         %6d     decimal int, at least 6 digits wide
-        %f      fp
+        %f      fp (float and double)
         %6f     fp, at least 6 digits wide
+        %.0f    suppress printing of the decimal point
         %.2f    fp, 2 digits after decimal point
         %6.2f   fp, at least 6 wide and 2 after dec. point
         %o      octal
