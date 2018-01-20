@@ -16,7 +16,7 @@ int main()
             if (nc > 9)
                 ++lengths[9];
             else if (nc > 0)
-                ++ lengths[nc - 1];
+                ++lengths[nc - 1];
             nc = 0;
         } else {
             ++nc;
@@ -27,10 +27,10 @@ int main()
     for (i = 0; i < 9; ++i) {
         printf("%3d-letter words: ", (i + 1));
         for (j = 0; j < lengths[i]; ++j)
-            printf("%c", 254); /* replace with putchar? */
+            putchar(254);
         putchar('\n');
     }
     printf("10+ letter words: ");
     for (j = 0; j < lengths[9]; ++j)
-        printf("%c", 254); /* replace with putchar? */
+        putchar(254);
 }
