@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* histogram of lengths of words in input */
+/* Exercise 1-13: histogram of lengths of words in input */
 int main()
 {
     int c, i, j, nc;
