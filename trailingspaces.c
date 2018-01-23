@@ -15,7 +15,7 @@ int main()
 
     while ((len = mgetline(line, MAXLINE)) > 0) {
         removeSpaces(line, len);
-        printf("%s", line);
+        printf("%s\n", line);
     }
     return 0;
 }
@@ -39,11 +39,10 @@ int mgetline(char s[], int lim)
 void removeSpaces(char s[], int len)
 {
     int i;
-    i = len;
-    while (i > 0 && (s[i] == '\t' || s[i] == ' ' || s[i] == '\n' || s[i] == '\0')) {
+    i = len - 1;
+    while (i >= 0 && (s[i] == '\t' || s[i] == ' ' || s[i] == '\n')) {
+        s[i] = '\0';
         --i;
     }
-    s[i + 1] = '\n';
-    s[i + 2] = '\0';
     return;
 }
