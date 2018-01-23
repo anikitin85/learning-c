@@ -47,6 +47,7 @@ void reverseline(char s[])
         temp[i] = s[i];
         ++i;
     }
+    /* now i points to \0 */
     --i;
     /* now i points to the last character in s[] before \0 */
     if (s[i] == '\n')
