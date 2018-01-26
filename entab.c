@@ -15,7 +15,7 @@ int main()
     while ((len = mgetline(line, MAXLINE)) > 0)
     {
         entab(line, TAB);
-        printf("Same line with tabs instead spaces:\n%s", line);
+        printf("%s\n", line);
     }
     return 0;
 }
