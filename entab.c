@@ -7,6 +7,7 @@ int mgetline(char line[], int lim);
 void entab(char line[], int tabstop);
 
 /*  Exercise 1-21: replace blanks with tabs and blanks. */
+/* Today I am doing an Excel cource. Sorry, K&R! */
 int main()
 {
     int len;            /* current line length */
