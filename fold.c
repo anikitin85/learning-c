@@ -57,6 +57,9 @@ void foldprint(char s[], int len, int foldafter)
             ++c;
         }
         else {
+            while ((s[i] == ' ' || s[i] == '\t') && i < len) {
+                i++;
+            }
             putchar('\n');
             putchar(s[i]);
             c = 1;
