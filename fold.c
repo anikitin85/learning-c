@@ -4,7 +4,7 @@
 #define MAXLINE 1000    /* maximum input line length */
 
 int mgetline(char line[], int lim);
-void foldprint(char line[], int foldafter);
+void foldprint(char line[], int len, int foldafter);
 
 /*  Exercise 1-22: 'Fold'
     Fold long input lines into two or more shorter lines */
@@ -15,7 +15,7 @@ int main()
 
     while ((len = mgetline(line, MAXLINE)) > 0)
     {
-        foldprint(line, FOLDAFTER);
+        foldprint(line, len, FOLDAFTER);
     }
     return 0;
 }
@@ -38,7 +38,7 @@ int mgetline(char s[], int lim)
 
 /*  foldprint: break a long input line into
     shortert lines up to FOLDAFTER characters long */
-void foldprint(char s[], int foldafter)
+void foldprint(char s[], int len, int foldafter)
 {
     // get char from s[]
     // if counter < foldafter
@@ -47,4 +47,19 @@ void foldprint(char s[], int foldafter)
     // new line
     // reset counter
     // putchar
+
+    int i, c;
+    c = 0;
+
+    for (i = 0; i < len; ++i) {
+        if (c < foldafter) {
+            putchar(s[i]);
+            ++c;
+        }
+        else {
+            putchar('\n');
+            putchar(s[i]);
+            c = 1;
+        }
+    }
 }
