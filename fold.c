@@ -40,14 +40,6 @@ int mgetline(char s[], int lim)
     shortert lines up to FOLDAFTER characters long */
 void foldprint(char s[], int len, int foldafter)
 {
-    // get char from s[]
-    // if counter < foldafter
-    // putchar
-    // else
-    // new line
-    // reset counter
-    // putchar
-
     int i, c;
     c = 0;
 
