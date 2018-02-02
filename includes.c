@@ -9,7 +9,7 @@ int main()
 {
     unsigned char i = 0;
     unsigned short int k = 0;
-    
+
     printf("lowest unsigned char value: %d\n", i);
     printf("highest unsigned char value: %d\n", --i);
     printf("lowest unsigned short int value: %d\n", k);
@@ -22,11 +22,13 @@ int main()
     l = 0;
     n = l + 1;
 
-    while (j < m) {
+    while (j < m)
+    {
         j++;
         m++;
     }
-    while (l < n) {
+    while (l < n)
+    {
         l++;
         n++;
     }
@@ -41,11 +43,13 @@ int main()
     long int c, d;
     c = 0;
     d = c + 1;
-    while (a < b) {
+    while (a < b)
+    {
         a++;
         b++;
     }
-    while (c < d) {
+    while (c < d)
+    {
         c++;
         d++;
     }
@@ -54,7 +58,7 @@ int main()
     printf("lowest long int value: %ld\n", d);
     printf("highest long int value: %ld\n\n", c);
 
-    float e;
+    /* float e;
     double f;
     long double g;
     e = 0;
@@ -66,5 +70,21 @@ int main()
     printf("lowest double value: %f\n", g);
     printf("highest double value: %f\n", e);
     printf("lowest long double value: %f\n", f);
-    printf("highest long double value: %f\n", g);
+    printf("highest long double value: %f\n", g); */
+
+    // FOUND ONLINE
+    printf("PART TWO\n===================\n");
+    printf("Range of Char %d\n", CHAR_BIT);
+    printf("Range of Char Max %d\n", CHAR_MAX);
+    printf("Range of Char Min %d\n", CHAR_MIN);
+    printf("Range of int min %d\n", INT_MIN);
+    printf("Range of int max %d\n", INT_MAX);
+    printf("Range of long min %ld\n", LONG_MIN);
+    printf("Range of long max %ld\n", LONG_MAX);
+    printf("Range of short min %d\n", SHRT_MIN);
+    printf("Range of short max %d\n", SHRT_MAX);
+    printf("Range of unsigned char %u\n", UCHAR_MAX);
+    printf("Range of unsigned long %lu\n", ULONG_MAX);
+    printf("Range of unsigned int %u\n", UINT_MAX);
+    printf("Range of unsigned short %u\n", USHRT_MAX);
 }
