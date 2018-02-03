@@ -23,8 +23,8 @@ int main()
     //      #define VTAB '\013'             (ASCII VERTICAL TAB)
     //      #define BELL '\007'             (ASCII BELL CHARACTER)
 
-    // ALL ESCAPE SEQUENCES FOR CHAR:
-    /*  \a  alert (bell)
+    /*  ALL ESCAPE SEQUENCES FOR CHAR:
+        \a  alert (bell)
         \b  backspace
         \f  formfeed
         \n  newline
@@ -35,6 +35,7 @@ int main()
         \?  question mark
         \'  single quote
         \"  double quote
+        \0  zero, null character
         \123 octal
         \xAB hexadecimal    */
 
