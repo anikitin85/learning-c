@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 /*  Constants */
+// Today, Excel class only
 int main()
 {
     // Non-FP are integers:         123     (INT - DEFAULT)
