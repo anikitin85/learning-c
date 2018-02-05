@@ -47,4 +47,17 @@ int main()
     }
 
     printf("%d", strlen("some text!"));
+
+
+    // ENUMERATION is a list of integer constants
+    enum boolean { NO, YES };
+    // If values are not specified, NO = 0, YES = 1, etc.
+
+    enum months {   JAN = 1, FEB, MAR, APR, MAY, JUN,
+                    JUL, AUG, SEP, OCT, NOV, DEC };
+    // FEB = 2, MAR = 3, etc.
+
+    // const says the variable won't be changed
+    const double e = 2.71828182845905;
+    const char msg[] = "warning :";
 }
