@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <string.h>
 
 /*  Constants */
-// Today, Excel class only
+
 int main()
 {
     // Non-FP are integers:         123     (INT - DEFAULT)
@@ -44,4 +45,6 @@ int main()
     for (char c = 'A'; c <= 'Z'; c++) {
         printf("%c -> %c\n", c, c + ' ');    
     }
+
+    printf("%d", strlen("some text!"));
 }
