@@ -60,4 +60,6 @@ int main()
     // const says the variable won't be changed
     const double e = 2.71828182845905;
     const char msg[] = "warning :";
+    // also in arguments:
+    int strlen(const char[]);
 }
