@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 /*  Exercise 2-3: Convert string '0xFFFFF' to integer */
 
@@ -13,7 +14,7 @@ int main()
     char s[MAXLINE];
     while ((len = mgetline(s, MAXLINE)) > 0)
     {
-        printf("Converted: %x", s, htoi(s, len));
+        printf("Converted: %x\n", htoi(s, len));
     }
     return 0;
 }
@@ -38,13 +39,26 @@ int mgetline(char s[], int lim)
 int htoi(char s[], int len)
 {
     int res = 0;
-    int prefix = 0;
+    int i = 0;
+    char cur;
     if (len > 2 && s[0] == '0' && s[1] == 'x') {
-        prefix = 1;
+        s[0] = ' ';
+        s[1] = ' ';
     }
-
-    
-
+    len++;
+    while ((cur = s[i]) != '\0') {
+        if (isdigit(cur)) {
+            res += (cur - '0') * 16^len;
+        }
+        else if (cur >= 'a' && cur <= 'f') {
+            res += (cur - 'a') * 16^len;
+        }
+        else if (cur >= 'A' && cur <= 'F') {
+            res += (cur - 'A') * 16^len;
+        }
+        i++;
+        len--;
+    }
 
     return res;
 }
