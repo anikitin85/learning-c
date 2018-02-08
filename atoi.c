@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <math.h>
 
 /*  atoi: convert s to int */
 int atoi(char s[]);
@@ -11,6 +12,8 @@ int main()
     printf("%d\n", atoi(s));
     printf("%c\n", lower('A'));
     printf("%d", isdigit('3'));
+    sqrt(5);
+    int g = rand();
     return 0;
 }
 
