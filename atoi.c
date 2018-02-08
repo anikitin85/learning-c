@@ -31,3 +31,6 @@ int lower(int c)
     else
         return c;
 }
+
+// <ctype.h>:   tolower(c) - make lower case
+//              isdigit(c) - test c >= '0' && c <= '9'
