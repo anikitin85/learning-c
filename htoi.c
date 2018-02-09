@@ -60,21 +60,16 @@ int htoi(char s[], int len)
     len--;
     while ((cur = s[i]) != '\0') {
         if (isdigit(cur)) {
-            printf("is number\n");
             res = res + (cur - '0') * power(16, len-1);
         }
         else if (cur >= 'a' && cur <= 'f') {
-            printf("is a-f\n");
             res = res + (cur - 'a' + 10) * power(16, len-1);
         }
         else if (cur >= 'A' && cur <= 'F') {
-            printf("is A-F\n");
             res = res + (cur - 'A' + 10) * power(16, len-1);
         }
-        printf("Debug. s[i]=%c, i=%d, len=%d, res=%d\n", cur, i, len, res);
         i++;
         len--;
     }
-
     return res;
 }
