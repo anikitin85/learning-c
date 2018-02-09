@@ -6,6 +6,7 @@
 #define MAXLINE 1000 /* maximum input line length */
 
 int mgetline(char line[], int lim);
+int power(int m, int n);
 int htoi(char s[], int len);
 
 int main()
@@ -35,6 +36,17 @@ int mgetline(char s[], int lim)
     return i;
 }
 
+/* power: raise base t n-th power; n >= 0 */
+int power(int base, int n)
+{
+    int i, p;
+
+    p = 1;
+    for (int i = 1; i <= n; ++i)
+        p = p * base;
+    return p;
+}
+
 /* htoi: convert string hex to integer */
 int htoi(char s[], int len)
 {
@@ -44,17 +56,18 @@ int htoi(char s[], int len)
     if (len > 2 && s[0] == '0' && s[1] == 'x') {
         s[0] = ' ';
         s[1] = ' ';
+        len -= 2;
     }
-    len++;
+    len--;
     while ((cur = s[i]) != '\0') {
         if (isdigit(cur)) {
-            res += (cur - '0') * 16^len;
+            res += (cur - '0') * power(16, len);
         }
         else if (cur >= 'a' && cur <= 'f') {
-            res += (cur - 'a') * 16^len;
+            res += (cur - 'a') * power(16, len);
         }
         else if (cur >= 'A' && cur <= 'F') {
-            res += (cur - 'A') * 16^len;
+            res += (cur - 'A') * power(16, len);
         }
         i++;
         len--;
