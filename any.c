@@ -8,7 +8,7 @@ int any(char wheretolook[], char whattolook[]);
 int main()
 {
     char s1[] = "some arbitrary long character string";
-    char s2[] = "r";
+    char s2[] = "z";
     int p = any(s1, s2);
 
     printf("In s1[], %c is on the %dth place", s1[p], p + 1);
