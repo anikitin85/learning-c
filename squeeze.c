@@ -7,8 +7,11 @@ void squeeze(char s1[], char s2[]);
 
 int main()
 {
+    char s1[] = "some chars";
+    char s2[] = "rm";
+    squeeze(s1, s2);
+    printf("%s", s1);
     return 0;
-}
 
 void squeeze(char s1[], char s2[])
 {
@@ -24,6 +27,8 @@ void squeeze(char s1[], char s2[])
         if (!instr) {
             s1[j++] = s1[i];
         }
+        instr = 0;
     }
     s1[j] = '\0';
+    return;
 }
