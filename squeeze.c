@@ -12,6 +12,7 @@ int main()
     squeeze(s1, s2);
     printf("%s", s1);
     return 0;
+}
 
 void squeeze(char s1[], char s2[])
 {
