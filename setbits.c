@@ -6,8 +6,8 @@ int setbits(int x, int p, int n, int y);
 
 int main()
 {
-    unsigned int input1 = 10;
-    unsigned int input2 = 20;
+    unsigned int input1 = 0;
+    unsigned int input2 = 255;
     
     int output = setbits(input1, 2, 2, input2);
 
@@ -17,5 +17,5 @@ int main()
 
 int setbits(int x, int p, int n, int y)
 {
-
+    return x | (((y & (0xffff >> n))) << n);
 }
