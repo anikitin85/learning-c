@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int setbits(int x, int p, int n, int y);
+int setbits(unsigned int x, int p, int n, unsigned int y);
 
 /*  Exercise 2-6: setbits(x, p, n, y) */
 
@@ -15,7 +15,7 @@ int main()
     return 0;
 }
 
-int setbits(int x, int p, int n, int y)
+int setbits(unsigned int x, int p, int n, unsigned int y)
 {
     return x | (((y & (0xffff >> n))) << n);
 }
