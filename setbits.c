@@ -19,6 +19,7 @@ int main()
 int setbits(unsigned int x, int p, int n, unsigned int y)
 {
     // save n lower bits of y in temp 1
+    // I will look for answers online (2-6, 2-7, 2-8, 2-9)
     unsigned int temp1 = (y | (0xffff << n));
     // save lower n bits of x in temp 2
     return x;
