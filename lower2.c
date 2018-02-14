@@ -22,3 +22,10 @@ int lower(int c)
 {
     return (c >= 'A' && c <= 'Z') ? c + ' ' : c;
 }
+
+//  () - function call
+//  ->, . - access to members of structures
+//  sizeof
+//  * - indirection through a pointer
+//  & - address of an object
+//  , - comma operator
