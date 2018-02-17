@@ -4,6 +4,7 @@ int any(char wheretolook[], char whattolook[]);
 
 /*  Exercise 2-5: return pos in s1 where
     any char from s2 occurs */
+    // Will resume tomorrow
 
 int main()
 {
