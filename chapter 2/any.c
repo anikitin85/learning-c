@@ -4,10 +4,7 @@ int any(char wheretolook[], char whattolook[]);
 
 /*  Exercise 2-5: return pos in s1 where
     any char from s2 occurs */
-    // Will resume tomorrow
-    // Or tomorrow (do Excel course everyday -
-    // seems more profitable in the nearest future)
-    // gotta find a diary app
+    // Resuming the course
 
 int main()
 {
